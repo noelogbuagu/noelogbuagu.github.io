@@ -1,0 +1,17 @@
+{
+    "folders": [
+		{
+			"name": "Python",
+			"path": "../Python"
+		},
+		{
+			"path": "../Web devlopment"
+		},
+		{
+			"path": "."
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "Web devlopment"
+    }
+}
