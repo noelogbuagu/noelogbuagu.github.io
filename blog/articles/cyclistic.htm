@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Case Study: Cyclistic</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="/index.htm" class="logo">Welcome</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li><a href="/blog/blog.htm">PREVIOUS</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/noel-ogbuagu-61813414a/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/noelogbuagu" class="icon brands alt fa-github"><span
+                                    class="label">GitHub</span></a></li>
+                <li><a href="https://twitter.com/ObiTheExplorer?s=20" class="icon brands alt fa-twitter"><span
+                                    class="label">Twitter</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Post -->
+            <section class="post">
+                <header class="major">
+                    <span class="date">October 5, 2021</span>
+                    <h1>My Report on<br /> Cyclistic</h1>
+                    <p>This article contains information on the background and purpose of the case study<br /> as well as the the problem statement and information on the data<br /> finally, I deliver trends, relationships and give my recomendations.<br
+                        /> I welcome feedback and comments. I sincerely hope you enjoy it.
+                    </p>
+                </header>
+
+
+                <h2>About Cyclistic</h2>
+                <p>
+                    Business Model:
+                </p>
+                <ul>
+                    <li>Product: bike-sharing geotracked and network locked bikes across Chicago</li>
+                    <li>Customer types and revenue model: members (annual subscribers) and casual riders (single-ride and full-day purchasers)</li>
+                    <li>Value: Bicycle variety (broad consumer segments) and pricing flexibility</li>
+                </ul>
+                <p>
+                    Product Background:
+                </p>
+                <ul>
+                    <li>5,824 bicycles and 692 docking stations</li>
+                    <li>More than 50% of riders select traditional bikes</li>
+                    <li>8% of riders opt for the assistive bike options</li>
+                    <li>30% of users bike to commute to work each day</li>
+                    <li>Users are more likely to ride for leisure</li>
+                    <li>Casual riders have chosen Cyclistic for their mobility needs</li>
+                </ul>
+
+
+                <h2>Scenario</h2>
+                <p>
+                    The director of marketing at Cyclistic, a bike-share company in Chicago, believes the company’s future success depends on maximising the number of annual memberships. As a junior data analyst working in the marketing analyst team, I have been tasked with
+                    determining how annual members and casual riders use Cyclistic bikes differently. Based on these insights, the team will design a new marketing strategy to convert casual riders into annual members. Nevertheless, Cyclistic executives
+                    must first approve recommendations, so they must be backed up with compelling data insights and professional data visualisations.
+                </p>
+
+                <h2>Purpose</h2>
+                <p>
+                    This case study aims to discover and report actionable insights to inform decision-making at an executive level on the future marketing strategy of Cyclistic.
+                </p>
+
+
+                <h2>Characters and Goals</h2>
+                <table>
+                    <thead>
+                        <th>Stakeholders</th>
+                        <th>Expectations</th>
+                        <th>Project/Business Goals</th>
+                    </thead>
+                    <tr>
+                        <td>Cyclistic Executive Team</td>
+                        <td>Compelling, relevant and straightforward insights to inform data-driven marketing decisions
+                        </td>
+                        <td>Implementing strategic initiatives to promote business growth</td>
+                    </tr>
+                    <tr>
+                        <td>Lily Moreno, Director of Marketing</td>
+                        <td>Evidence to back up her theory and marketing recommendations
+                        </td>
+                        <td>Convert a sizable group of casual riders to become annual members</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing analytics team</td>
+                        <td>Uncovering the differences and motivations behind different customer types
+                        </td>
+                        <td>Produce data-driven and actionable results to inform business decision making</td>
+                    </tr>
+                </table>
+
+
+                <h2>Scope of Work</h2>
+                <p>The scope of work for the case study can be found <a href="https://docs.google.com/document/d/19ByV-kwuSuJSaNyI1PARqePhVJTAbjWyXUyIyE89ysE/edit?usp=sharing">here</a>.
+                </p>
+
+                <h2>Problem Statement</h2>
+                <p>
+                    Cyclistic has reached a stage where its growth can no longer rely on building general awareness and appealing to broad customer segments. It is time to zero in. The director of marketing and the financial analysts believe increasing annual memberships
+                    is pivotal to ensure future success. The director of marketing thinks the most suitable way to increase annual memberships would be to convert casual members because of their knowledge and the adoption of the Cyclistic program and
+                    services. However, to accomplish this feat, a deeper understanding of the differences in how annual and casual riders use bikes is needed.
+                </p>
+
+
+                <h2>The Data Source</h2>
+                <h3>Assumptions</h3>
+                <p>The data collected as well as the collection process by Cyclistic, was done with integrity. Also, the security, reliability, originality, correctness and credibility were ensured by Cyclistic - the first-party data source. </p>
+                <h3>Data location</h3>
+                <p>
+                    The data used in this case study is located <a href="https://divvy-tripdata.s3.amazonaws.com/index.html">here,</a> and it is made available by Motivate International Inc. (“Motivate”) under this <a href="https://www.divvybikes.com/data-license-agreement">license</a>.
+                </p>
+                <h3>Data organisation</h3>
+                <p>The data available to us consists of a repository made up of quantitative measurements collected over time. Each data point represents a single bike trip from one docking station to the next. Data is stored on a month-by-month basis in
+                    an excel file compressed into a ZIP file folder. The naming convention is YYYYMM-cyclistic-tripdata.zip. The date each zip folder was modified is also indicated to notify users of the most current data, and the file size is also listed.
+                </p>
+                <h3>Data quality</h3>
+                <p>
+                    Data quality was assessed using the ROCCC criteria and determining the credibility and level of Bias of the data. ROCCC is an acronym that stands for reliable, original, comprehensive, current and cited. The results of the assessment are as follows:
+                </p>
+                <ul>
+                    <li><strong>Reliable</strong>: Initial exploration of the data revealed the following reliability issues:
+                        <ul>
+                            <li>Little urgency was placed on formatting as some end date-times came before the starting date-times for rides. Also, station IDs were not unique to stations, and multiple stations had different IDs.</li>
+                            <li>The data is about 97% complete, with most of the missing data coming from the start and end station names and IDs. </li>
+                        </ul>
+                    </li>
+                    <li><strong>Original</strong>: Data is first-party data collected and made available by Motivate International Inc. (“Motivate”).
+                    </li>
+                    <li><strong>Comprehensive</strong>: The data is ample enough for exploration.</li>
+                    <li><strong>Current</strong>: the data is the most recently modified data to get accurate results.
+                    </li>
+                    <li><strong>Cited</strong>: The data is first-party data from Motivate International Inc. (“Motivate”).</li>
+                </ul>
+                <h3>Data ethics</h3>
+                <ul>
+                    <li><strong>Licensing</strong>:The data has been made available by Motivate International Inc under
+                        <a href="https://www.divvybikes.com/data-license-agreement">these licensing terms</a>.
+                    </li>
+                    <li><strong>Privacy</strong>: The data is anonymised. There are no names or addresses that can link the data to the user.
+                    </li>
+                    <li><strong>Security</strong>: The data is in a cloud repository that is managed by authorised Motivate employees and is secure by a trusted cloud services provider (Amazon Web Services).
+                    </li>
+                    <li><strong>Accessibility</strong>: Under the license, the data is open and accessible.</li>
+                </ul>
+                <h3>data integrity</h3>
+                <p>The majority of the data is complete, accurate and consistent with minor human errors.</p>
+                <h3>data relevance</h3>
+                <p>The data contains information relevant to accomplishing the business task.</p>
+
+
+                <h2>Cleaning Process</h2>
+                <p>After downloading and storing the data, exploration showed that the amount of data to be analysed is about 5 million rows. R and RStudio were used to perform analysis for the following reasons:
+                </p>
+                <ul>
+                    <li>Ease with handling vasts amounts of data.
+                    </li>
+                    <li>Code is reproducible.</li>
+                </ul>
+                <p>The data was examined for misspelt words, null values, whitespaces, duplicates, inconsistent string and formatting to ensure data integrity. Data cleaning, transformation and visualisation changes are logged in a <a href="https://docs.google.com/spreadsheets/d/1y3szDbNIQZFT7OwH7xCQc5Hxw90U2Qby/edit?usp=sharing&ouid=114917104338191803403&rtpof=true&sd=true">change log</a>.
+                </p>
+
+
+                <h2>Insights and surprises</h2>
+                <ol>
+                    <li>Over the last year, annual members went on more bike rides than casual riders but the latter, on average, spend about 1.6 times longer on bike rides. Which makes sense as 50% of casual riders spend 15 minutes on bike rides compared
+                        to the 10 minutes spent by the same percentage of annual members on rides.
+                    </li>
+                    <li>In general, users use classic bikes the most, followed by electric bikes and then docked bikes. However, casual riders use docked bikes more than annual members. The latter prefer using classic and electric bikes.
+                    </li>
+                    <li>
+                        Annual members are more active than casual riders on weekdays, while the latter is more active than the former on weekends. However, Sunday is the busiest day for both casual and member riders.
+                    </li>
+                    <li>
+                        Despite casual riders having longer bike rides than annual members, the average distance travelled by both users is roughly the same.
+                    </li>
+                    <li>
+                        Most rides last less than an hour, with the vast majority of rides lasting 20 minutes or less.
+                    </li>
+                </ol>
+
+
+
+                <h2>Trends and relationships</h2>
+                <ol>
+                    <li>In terms of daytime activity, Casual riders are very active from late night to dawn, while annual members are more active in the early morning. However, mid-day activity is about 50-50 between casual and member riders.
+                    </li>
+                    <li>Generally, the longest rides happen mid-day and weekends, while the shortest trips occur early morning and mid-week.
+                    </li>
+                    <li>
+                        The peak time for rides is about the same on the weekends, with Sunday having a more extended peak period. However, the peak time in the mid-week lasts longer than on weekends.
+                    </li>
+                    <li>
+                        Casual riders tend to take longer rides - especially for mid-day and weekend rides. Members are more active than casual riders earlier in the day.
+                    </li>
+                    <li>
+                        Year-round, annual members are more active than casual riders except during the summer. In addition, summer is the busiest period of the year, while winter is the least active period, especially for casual riders.
+                    </li>
+                </ol>
+
+
+                <h2>Conclusion</h2>
+                <p>
+                    The purpose of the case study is to discover and report actionable insights to inform decision-making on a possible casual rider to annual member conversion marketing strategy. To convert casual riders to annual members it is imperative to understand
+                    <strong>why</strong> both groups differ to create new policies to convince casual riders to become annual members. Currently, the available data only reveals how both groups differ, which would be fine if a conversion strategy was
+                    not the primary goal. <br> Hence, Cyclistic <strong>should not</strong> move forward with a conversion marketing strategy at the moment as it would be too risky because of the absence of sufficient data. Instead, revising the data
+                    collection process to collect demographic and qualitative data would be the best course to devise a conversion strategy.
+                </p>
+
+
+
+                <h2>Hypotheses</h2>
+                <ol>
+                    <li>Annual members use cyclistic for leisure and for commuting to and from work.</li>
+                    <li>Casual riders use Cyclistic majorly for leisure.</li>
+                </ol>
+
+                <h2>justifications</h2>
+                <p>For annual members:</p>
+                <ul>
+                    <li>They are very active in the morning (5:00 am to 9:00 am).</li>
+                    <li>They are active during the evening rush hour when work is expected to be over for the day.</li>
+                    <li>They use bikes consistently each week throughout the year.</li>
+                </ul>
+                <p>For casual riders:</p>
+                <ul>
+                    <li>They are not active in the mornings</li>
+                    <li>They are not active during the winter</li>
+                    <li>They are more active on weekends than on weekdays</li>
+                    <li>They are very active mid-day and late nate night on weekdays</li>
+                    <li>They take longer bike rides</li>
+                </ul>
+
+
+                <h2>recommendations</h2>
+                <h3>data collection revision</h3>
+                <p>As stated earlier, Cyclistic <strong>should not</strong> move forward with a conversion marketing strategy at the moment as it would be too risky. Instead, the focus should be revising the data collection process to collect demographic
+                    and qualitative data. <br> To confirm whether the hypotheses discussed earlier are factual or not or to discover some new significant behavioural differences between casual riders and annual members:
+                </p>
+                <ul>
+                    <li><strong>Survey Cyclistic users</strong>: A representative sample of users will need to be surveyed to determines their motivations, opinions and experiences. The qualitative data gathered will provide proper context to the findings
+                        from this case study.
+                    </li>
+                    <li><strong>Include user demographic data</strong>: Demographic data provides more insight into who the average casual rider or annual member is. This data will significantly inform a conversion strategy.
+                    </li>
+                </ul>
+                <h3>Deciding to Move Forward Regardless</h3>
+                <p>Should Cyclistic choose to move forward with the conversion strategy based on insights from this analysis, the company must be prepared to execute additional risk and cost-benefit analyses on the proposed strategies. That said, the top
+                    three recommendations are as follows:
+                </p>
+                <ul>
+                    <li><strong>Consider an alternative to conversion</strong>: A more convenient approach that can drive growth would be to establish new pricing models or services. In particular, a unique annual weekend offering that offers unlimited rides
+                        on weekends throughout the year. Another alternative could be a summer offering that grants unlimited rides all through summer. from this case study.
+                    </li>
+                    <li><strong>A benefit-based marketing strategy</strong>: This method would require Cyclistic to run individual campaigns on the physical, mental and environmental benefits. By following this strategy, Cyclistic would target casual riders
+                        who have fitness goals, want to reduce stress, and are very eco-friendly.
+                    </li>
+                    <li><strong>Include annual member subscription privileges</strong>: This method involves introducing more privileges for annual members. These could include the right of first refusal if they are near a docking station or the ability to
+                        use an extra bike for a friend (could be very applicable in the summer, as casual riders most likely do not bike alone). This strategy is precarious because it does not guarantee casual rider conversion. Nevertheless, it would
+                        be beneficial to address the pain points of annual members.
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Location</h3>
+                    <p>Lagos, Nigeria</p>
+                </section>
+                <section>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+2348118879872">+2348118879872</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:rnoogbuagu@gmail.com">rnoogbuagu@gmail.com</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.linkedin.com/in/noel-ogbuagu-61813414a/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a>
+                        </li>
+                        <li><a href="https://github.com/noelogbuagu" class="icon brands alt fa-github"><span
+                                                class="label">GitHub</span></a></li>
+                        <li><a href="https://twitter.com/ObiTheExplorer?s=20" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+</body>
+
+</html>
