@@ -89,31 +89,39 @@
 
 
                 <h2>Characters and Goals</h2>
-                <table>
-                    <thead>
-                        <th>Stakeholders</th>
-                        <th>Expectations</th>
-                        <th>Project/Business Goals</th>
-                    </thead>
-                    <tr>
-                        <td>Cyclistic Executive Team</td>
-                        <td>Compelling, relevant and straightforward insights to inform data-driven marketing decisions
-                        </td>
-                        <td>Implementing strategic initiatives to promote business growth</td>
-                    </tr>
-                    <tr>
-                        <td>Lily Moreno, Director of Marketing</td>
-                        <td>Evidence to back up her theory and marketing recommendations
-                        </td>
-                        <td>Convert a sizable group of casual riders to become annual members</td>
-                    </tr>
-                    <tr>
-                        <td>Marketing analytics team</td>
-                        <td>Uncovering the differences and motivations behind different customer types
-                        </td>
-                        <td>Produce data-driven and actionable results to inform business decision making</td>
-                    </tr>
-                </table>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stakeholders</th>
+                                <th>Expectations</th>
+                                <th>Project/Business Goals</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cyclistic Executive Team</td>
+                                <td>Compelling, relevant and straightforward insights to inform data-driven marketing decisions
+                                </td>
+                                <td>Implementing strategic initiatives to promote business growth</td>
+                            </tr>
+                            <tr>
+                                <td>Lily Moreno, Director of Marketing</td>
+                                <td>Evidence to back up her theory and marketing recommendations
+                                </td>
+                                <td>Convert a sizable group of casual riders to become annual members</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing analytics team</td>
+                                <td>Uncovering the differences and motivations behind different customer types
+                                </td>
+                                <td>Produce data-driven and actionable results to inform business decision making</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
 
 
                 <h2>Scope of Work</h2>
@@ -185,22 +193,34 @@
                 <p>The data was examined for misspelt words, null values, whitespaces, duplicates, inconsistent string and formatting to ensure data integrity. Data cleaning, transformation and visualisation changes are logged in a <a href="https://docs.google.com/spreadsheets/d/1y3szDbNIQZFT7OwH7xCQc5Hxw90U2Qby/edit?usp=sharing&ouid=114917104338191803403&rtpof=true&sd=true">change log</a>.
                 </p>
 
+                <h2>Data Analysis</h2>
+                <p>
+                    As stated earlier, all code used to clean, analyze and visualize the data was done and published in with R in RStudio. The published document can be viewed <a href="https://rpubs.com/obitheexplorer/818278">here</a>.
+                </p>
 
                 <h2>Insights and surprises</h2>
                 <ol>
                     <li>Over the last year, annual members went on more bike rides than casual riders but the latter, on average, spend about 1.6 times longer on bike rides. Which makes sense as 50% of casual riders spend 15 minutes on bike rides compared
                         to the 10 minutes spent by the same percentage of annual members on rides.
                     </li>
-                    <li>In general, users use classic bikes the most, followed by electric bikes and then docked bikes. However, casual riders use docked bikes more than annual members. The latter prefer using classic and electric bikes.
+                    <li>In general, users use classic bikes the most, followed by electric bikes and then docked bikes.
+                        <span class="image fit"><img
+                                src="/images/users_by_bike_type.png"
+                                alt="" />
+                        </span>
                     </li>
                     <li>
-                        Annual members are more active than casual riders on weekdays, while the latter is more active than the former on weekends. However, Sunday is the busiest day for both casual and member riders.
+                        Annual members are generally more active than casual riders, but the latter is more active on weekends compared to mid-week. However, Sunday is the busiest day for both casual and member riders.
+                        <span class="image fit"><img src="/images/rides_for_users_by_time_of day.png" alt="" />
+                        </span>
                     </li>
                     <li>
                         Despite casual riders having longer bike rides than annual members, the average distance travelled by both users is roughly the same.
                     </li>
                     <li>
                         Most rides last less than an hour, with the vast majority of rides lasting 20 minutes or less.
+                        <span class="image fit"><img src="/images/ride_duration.png" alt="" />
+                        </span>
                     </li>
                 </ol>
 
@@ -210,16 +230,24 @@
                 <ol>
                     <li>In terms of daytime activity, Casual riders are very active from late night to dawn, while annual members are more active in the early morning. However, mid-day activity is about 50-50 between casual and member riders.
                     </li>
-                    <li>Generally, the longest rides happen mid-day and weekends, while the shortest trips occur early morning and mid-week.
-                    </li>
-                    <li>
-                        The peak time for rides is about the same on the weekends, with Sunday having a more extended peak period. However, the peak time in the mid-week lasts longer than on weekends.
+                    <li>Generally, the longest rides happen on weekends, while the shortest trips occur early mid-week.\
+                        <span class="image fit"><img src="/images/trip_duration.png" alt="" />
+                        </span>
                     </li>
                     <li>
                         Casual riders tend to take longer rides - especially for mid-day and weekend rides. Members are more active than casual riders earlier in the day.
+                        <span class="image fit"><img src="/images/trip_duration_by_time_of_day.png" alt="" />
+                        </span>
                     </li>
                     <li>
                         Year-round, annual members are more active than casual riders except during the summer. In addition, summer is the busiest period of the year, while winter is the least active period, especially for casual riders.
+                        <span class="image fit"><img src="/images/seasons.png" alt="" />
+                        </span>
+                    </li>
+                    <li>
+                        Majority of the bike trips occur near the coast. However, annual members are more spreadout compared to casual riders. The latter is concentrated around the coast.
+                        <span class="image fit"><img src="/images/rider_location.png" alt="" />
+                        </span>
                     </li>
                 </ol>
 
